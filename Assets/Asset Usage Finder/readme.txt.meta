@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Asset Usage Finder/readme.txt.meta
+guid: 994604101a3fe5b40baa74ad0b0519f3
+timeCreated: 1490728548
+licenseType: Store
+========
+guid: 746da98302dc0402aaa37e8f7bd97e77
+labels:
+- al_max
+- al_max_export_path-MaxSdk/AppLovin/Editor/Dependencies.xml
+>>>>>>>> QuangTM_SpecialLevels:Assets/MaxSdk/AppLovin/Editor/Dependencies.xml.meta
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

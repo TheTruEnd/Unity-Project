@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b49fb9f58b6334bb3d35e1ecb9d11a, type: 3}
+  m_Name: CanvasPrefTable
+  m_EditorClassIdentifier: 
+  Serializers:
+  - key: HomeMenu
+    settingUI:
+      uiType: 0
+      baseUI: {fileID: 43833923370065268, guid: b5156f00dac5bb74884f16e809849a2a, type: 3}
+  - key: GameMenu
+    settingUI:
+      uiType: 0
+      baseUI: {fileID: 6096077471740869247, guid: ca433eb5a65788d4ba6210ea47324cd3, type: 3}
