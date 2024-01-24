@@ -14,4 +14,13 @@ public class Bullet : BasePooling
     {
         rb.velocity = new Vector2(speed, 0);
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Block"))
+        {
+            Debug.Log("Hit Bullet");
+            other.gameObject.SetActive(false);
+        }
+    }
 }

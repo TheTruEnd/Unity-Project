@@ -4,5 +4,7 @@ namespace GameTool
     {
         None,
         Bullet,
+        Wall,
+        Block,
     }
 }
