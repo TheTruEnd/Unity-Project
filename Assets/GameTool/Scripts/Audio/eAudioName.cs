@@ -3,13 +3,17 @@ namespace GameTool
     public enum eMusicName
     {
         None,
-        SplMusic,
-        Lobby,
-        Battle,
+        Splash_Music,
+        Lobby_Music,
+        Game_Music,
     }
     public enum eSoundName
     {
         None,
-        ButtonClick,
+        Jump,
+        Metal_Sound,
+        Stone_Sound,
+        Wood_Sound,
+        Player_Sound,
     }
 }

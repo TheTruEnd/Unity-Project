@@ -1,7 +1,5 @@
-using System;
 using GameTool;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class Wall : BasePooling
 {
@@ -31,9 +29,13 @@ public class Wall : BasePooling
     
     for (int i = 0; i < 4; i++)
     {
+        var blockType = (BlockType)Random.Range(0, 3);
+        
         //cache
         var position = transform.position;
         var block = (Block)PoolingManager.Instance.GetObject(NamePrefabPool.Block, transform, position: new Vector3(position.x, posY[i], position.z));
+        block.blockType = blockType;
+        block.SetData();
         SpriteRenderer sr = block.gameObject.GetComponent<SpriteRenderer>();
         sr.size = new Vector2(1, height[i]);
         
@@ -45,9 +47,7 @@ public class Wall : BasePooling
     
     private void Update()
     {
-        var transform1 = transform;
-        var position = transform1.position;
-        position = new Vector3(-speed * Time.deltaTime, position.y, position.z);
-        transform1.position = position;
+        var position = transform.position;
+        transform.Translate(new Vector3(-speed * Time.deltaTime, position.y, position.z));
     }
 }

@@ -46,3 +46,4 @@ MonoBehaviour:
   poolNameString: Wall
   index: 0
   size: 0
+  speed: 5

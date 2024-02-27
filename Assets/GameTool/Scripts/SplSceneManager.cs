@@ -19,7 +19,6 @@ namespace GameTool
         {
             StartCoroutine(nameof(LoadSceneHome));
             textContinue.gameObject.SetActive(false);
-            AudioManager.Instance.PlayMusic(eMusicName.SplMusic);
         }
 
         IEnumerator LoadSceneHome()

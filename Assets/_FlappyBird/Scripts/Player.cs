@@ -1,11 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using GameTool;
 using Unity.Mathematics;
-using UnityEditor.U2D.Sprites;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {

@@ -13,21 +13,36 @@ MonoBehaviour:
   m_Name: AudioTable
   m_EditorClassIdentifier: 
   musicTracksSerializers:
-  - key: SplMusic
+  - key: Splash_Music
     track:
       listAudio:
-      - {fileID: 8300000, guid: 6a257696127125e438105150f619efb1, type: 3}
-  - key: Lobby
+      - {fileID: 8300000, guid: bbb2ad2075deb494ab192765808658a0, type: 3}
+  - key: Lobby_Music
     track:
       listAudio:
-      - {fileID: 8300000, guid: b674020702a5a1e4994d3c3b93835ce1, type: 3}
-  - key: Battle
+      - {fileID: 8300000, guid: 13845f55cf70ea04d8bef2f915d5f7f2, type: 3}
+  - key: Game_Music
     track:
       listAudio:
-      - {fileID: 8300000, guid: 68c94940a2b4a1a42a1770ca3138a222, type: 3}
-      - {fileID: 8300000, guid: c3d1a37adac59de48b8954a6f7b48e13, type: 3}
+      - {fileID: 8300000, guid: 8903387e1f1b4d54fa9c035fd00cfd46, type: 3}
   soundTracksSerializers:
-  - key: ButtonClick
+  - key: Jump
     track:
       listAudio:
-      - {fileID: 8300000, guid: 251d81efe2b6b47868b80014daf360af, type: 3}
+      - {fileID: 8300000, guid: 11564f78389eb6c4a9d0aa32b89c9802, type: 3}
+  - key: Metal_Sound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 41e3129b6dadb514693f6b55760d6321, type: 3}
+  - key: Stone_Sound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 44a6236d3f66c564a9f105870f128997, type: 3}
+  - key: Wood_Sound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: c702148c2dc70fc458e54383c11115d5, type: 3}
+  - key: Player_Sound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 4cf9e48805515674d8874d71a48540b6, type: 3}

@@ -6,6 +6,7 @@ public class GameData : SingletonMonoBehaviour<GameData>
 {
     public GameDataSave Data;
 
+    public BlockData blockData;
     //[Header("RESOURCE")] 
 
     //[Header("SCENE FLOW")]
