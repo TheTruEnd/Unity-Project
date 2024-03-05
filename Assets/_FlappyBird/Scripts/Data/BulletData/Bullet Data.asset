@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f9fecfbeec42b41980c586b7de7cd7, type: 3}
+  m_Name: Bullet Data
+  m_EditorClassIdentifier: 
+  bulletInfos:
+  - damage: 0.25
+    sprite: {fileID: 21300000, guid: b7fee49df4fa2ac41b47d8c90f22ddc7, type: 3}
+  - damage: 0.3
+    sprite: {fileID: 21300000, guid: 6c4c7e4fb7fc92e469fd39d52a11d380, type: 3}
+  - damage: 0.35
+    sprite: {fileID: 21300000, guid: bcd1bfbdc3b2ab349a9d893369ec7a5b, type: 3}
+  - damage: 0.4
+    sprite: {fileID: 21300000, guid: c4ae97e687827a44cbd1c6c5f90f2d9a, type: 3}
+  - damage: 0.45
+    sprite: {fileID: 21300000, guid: 82d240efd58533945aba22ddca9266d5, type: 3}
+  - damage: 0.5
+    sprite: {fileID: 21300000, guid: 5884c15e98f3b13458238bb98994fbca, type: 3}
+  - damage: 0.55
+    sprite: {fileID: 21300000, guid: 07211d0b60d64484b84929fe29e89e8b, type: 3}
+  - damage: 0.6
+    sprite: {fileID: 21300000, guid: d6d05e6b725fa0d45a45e99766e2a407, type: 3}
+  - damage: 1
+    sprite: {fileID: 21300000, guid: a51953fe688de36498e4d0f307022391, type: 3}

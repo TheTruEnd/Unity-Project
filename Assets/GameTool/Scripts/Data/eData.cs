@@ -5,6 +5,7 @@ namespace GameTool
         None,
         Diamond,
         Gold,
+        highestScore,
         MuteAll,
         PushAlarm,
         SoundFX,
