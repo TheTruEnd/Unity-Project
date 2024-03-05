@@ -19,8 +19,7 @@ public class Bullet : BasePooling
     {
         if (other.gameObject.CompareTag("Block"))
         {
-            Debug.Log("Hit Bullet");
-            other.gameObject.SetActive(false);
+            Debug.Log("Hit Block");
         }
     }
 }

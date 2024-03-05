@@ -16,21 +16,21 @@ MonoBehaviour:
   - blockType: 0
     spriteInfos:
       listSprite:
-      - {fileID: 21300000, guid: b5229bad094ce524db97a5cf92f6d2df, type: 3}
-      - {fileID: 21300000, guid: 92b250f53e48fc246b1724c0d7ff4fa1, type: 3}
       - {fileID: 21300000, guid: 93a446590b51a41448eff18b0ea67388, type: 3}
-      maxHP: 0
+      - {fileID: 21300000, guid: 92b250f53e48fc246b1724c0d7ff4fa1, type: 3}
+      - {fileID: 21300000, guid: b5229bad094ce524db97a5cf92f6d2df, type: 3}
+      maxHP: 4
   - blockType: 1
     spriteInfos:
       listSprite:
-      - {fileID: 21300000, guid: e9c2ca82791b7a644b8e3cddd51d1db3, type: 3}
-      - {fileID: 21300000, guid: 8671e10ca7463c149bce36c2ec00eace, type: 3}
       - {fileID: 21300000, guid: 2fbea05cc0ec27f44bcc8780be91bf41, type: 3}
-      maxHP: 0
+      - {fileID: 21300000, guid: 8671e10ca7463c149bce36c2ec00eace, type: 3}
+      - {fileID: 21300000, guid: e9c2ca82791b7a644b8e3cddd51d1db3, type: 3}
+      maxHP: 6
   - blockType: 2
     spriteInfos:
       listSprite:
-      - {fileID: 21300000, guid: 589761c66f867e345b34d807ce17c154, type: 3}
-      - {fileID: 21300000, guid: 711bd8cf7f928424fab778cdd36721b5, type: 3}
       - {fileID: 21300000, guid: aeadc52898f4bed42876ef23622a6e56, type: 3}
-      maxHP: 0
+      - {fileID: 21300000, guid: 711bd8cf7f928424fab778cdd36721b5, type: 3}
+      - {fileID: 21300000, guid: 589761c66f867e345b34d807ce17c154, type: 3}
+      maxHP: 10

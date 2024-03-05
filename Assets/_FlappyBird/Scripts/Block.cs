@@ -1,6 +1,8 @@
 using System.Runtime.Serialization;
 using GameTool;
+using UnityEditor.Build.Content;
 using UnityEngine;
+
 
 public class Block : BasePooling
 {
@@ -18,13 +20,29 @@ public class Block : BasePooling
         curHP = GameData.Instance.blockData.listBlockSprites[(int)blockType].spriteInfos.maxHP;
         sr.sprite = GameData.Instance.blockData.listBlockSprites[(int)blockType].spriteInfos.listSprite[2];
     }
-
+    
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Debug.Log("Hit Block");
-            other.gameObject.SetActive(false);
+            curHP -= 3;
+            Debug.Log(curHP);
+        }
+        
+        float curHP_percent = (float)curHP/GameData.Instance.blockData.listBlockSprites[(int)blockType].spriteInfos.maxHP;
+        if (curHP_percent <= 2.0 / 3 && curHP_percent > 1.0 / 3)
+        {
+            sr.sprite = GameData.Instance.blockData.listBlockSprites[(int)blockType].spriteInfos.listSprite[1];
+        }
+        if (curHP_percent <= 1.0 / 3)
+        {
+            sr.sprite = GameData.Instance.blockData.listBlockSprites[(int)blockType].spriteInfos.listSprite[0];
+        }
+
+        if (curHP <= 0)
+        {
+            gameObject.SetActive(false);
         }
     }
 }
