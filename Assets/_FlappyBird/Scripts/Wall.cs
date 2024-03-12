@@ -29,7 +29,23 @@ public class Wall : BasePooling
     
     for (int i = 0; i < 4; i++)
     {
-        var blockType = (BlockType)Random.Range(0, 3);
+        BlockType blockType;   
+        if (GameData.Instance.score <= 15)
+        {
+            blockType = (BlockType)0;
+        }
+        else if (GameData.Instance.score <= 30)
+        {
+            blockType = (BlockType)Random.Range(0, 2);
+        }
+        else if (GameData.Instance.score <= 45)
+        {
+            blockType = (BlockType)Random.Range(1, 3);
+        }
+        else
+        {
+            blockType = (BlockType)2;
+        }
         
         //cache
         var position = transform.position;

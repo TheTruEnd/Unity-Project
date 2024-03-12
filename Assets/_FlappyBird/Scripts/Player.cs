@@ -42,34 +42,34 @@ public class Player : MonoBehaviour
             PoolingManager.Instance.GetObject(NamePrefabPool.Bullet, parent:null, transform.position).Disable(1);
         }
 
-        if (gameObject.transform.position.y < -5 || gameObject.transform.position.y > 5)
-        {
-            Debug.Log("Death");
-            // Application.Quit();
-            UnityEditor.EditorApplication.isPaused = true;
-        }
+        // if (gameObject.transform.position.y < -5 || gameObject.transform.position.y > 5)
+        // {
+        //     Debug.Log("Death");
+        //     // Application.Quit();
+        //     UnityEditor.EditorApplication.isPaused = true;
+        // }
 
-        // var pos = transform.position;
-        //
-        // if (pos.y >= boundTop)
-        // {
-        //     transform.position = new Vector2(pos.x, boundTop);
-        // }
-        // else if (pos.y <= boundBottom)
-        // {
-        //     transform.position = new Vector2(pos.x, boundBottom);
-        // }
+        var pos = transform.position;
+        
+        if (pos.y > boundTop)
+        {
+            transform.position = new Vector2(pos.x, boundTop);
+        }
+        else if (pos.y < boundBottom)
+        {
+            transform.position = new Vector2(pos.x, boundBottom);
+        }
         
     }
     
-    // private void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     if (other.transform.CompareTag("Block"))
-    //     {
-    //         Debug.Log("Death");
-    //         // Instantiate(prifab, new Vector3(0f, 0f), quaternion.identity);
-    //     }
-    // }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.CompareTag("Block"))
+        {
+            Debug.Log("Death");
+            // Instantiate(prifab, new Vector3(0f, 0f), quaternion.identity);
+        }
+    }
     
     // private void OnTriggerEnter2D(Collider2D other)
     // {

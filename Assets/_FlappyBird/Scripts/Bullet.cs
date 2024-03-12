@@ -16,7 +16,7 @@ public class Bullet : BasePooling
         rb.velocity = new Vector2(speed, 0);
 
         int score = GameData.Instance.score;
-        int index = score / 10;
+        int index = score / 5;
         
         if (index >= GameData.Instance.bulletData.bulletInfos.Count)
         {
