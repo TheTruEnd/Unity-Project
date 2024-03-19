@@ -125,3 +125,5 @@ MonoBehaviour:
   poolNameString: Block
   index: 0
   blockType: 0
+  MaxHP: 0
+  sound: 0

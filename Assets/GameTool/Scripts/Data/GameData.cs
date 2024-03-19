@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GameTool;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class GameData : SingletonMonoBehaviour<GameData>
 
     //[Header("SCENE FLOW")]
 
+    public List<RuntimeAnimatorController> listAnimators;
 
     protected override void Awake()
     {
@@ -140,12 +142,22 @@ public class GameData : SingletonMonoBehaviour<GameData>
             SaveData(eData.highestScore,HighestScore);
         }
        
+    }public int ID
+    {
+        get => Data.id;
+        set
+        {
+            Data.id = value;
+            // SaveData(eData.id, ID);
+        }
+       
     }
 }
 
 [Serializable]
 public class GameDataSave
 {
+    public int id;
     public int highestScore;
     [Header("CURRRENCY")] public int Diamond = 0;
     public int Gold = 0;

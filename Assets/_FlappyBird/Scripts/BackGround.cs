@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGround : MonoBehaviour
+public class Background : MonoBehaviour
 {
     [SerializeField] private float startPosX;
     [SerializeField] private float resetPosX;
