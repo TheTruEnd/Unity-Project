@@ -840,6 +840,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7632369280152879116, guid: d8bd99e4c109b1b47bba6193f03ff322, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -913291227
+      objectReference: {fileID: 0}
     - target: {fileID: 7632369280152879119, guid: d8bd99e4c109b1b47bba6193f03ff322, type: 3}
       propertyPath: cam
       value: 
@@ -904,6 +908,14 @@ PrefabInstance:
     - target: {fileID: 1322669250591285108, guid: b2f25c65b20132c4aa2ed5632a7c1388, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322669250591285109, guid: b2f25c65b20132c4aa2ed5632a7c1388, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322669250591285109, guid: b2f25c65b20132c4aa2ed5632a7c1388, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 935461171
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f25c65b20132c4aa2ed5632a7c1388, type: 3}

@@ -69,17 +69,25 @@ public class Player : MonoBehaviour
     {
         if (other.transform.CompareTag("Block"))
         {
-            Debug.Log("Death");
+            // Debug.Log("Death");
             // Instantiate(prifab, new Vector3(0f, 0f), quaternion.identity);
+
         }
     }
     
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Block"))
-    //     {
-    //         rb.velocity = new Vector2(0, -30f);
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Block"))
+        {
+            // rb.velocity = new Vector2(0, -30f);
+            
+            // UnityEditor.EditorApplication.isPaused = true;
+            
+            CanvasManager.Instance.Push(eUIName.Dead_Popup);
+            Time.timeScale = 0;
+            Destroy(gameObject);
+
+        }
+    }
     
 }

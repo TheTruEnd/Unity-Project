@@ -23,6 +23,8 @@ public class Lobby : MonoBehaviour
         id = 0;
     }
 
+    
+    
     private void Awake()
     {
         playBtn.onClick.AddListener(() =>
@@ -30,6 +32,8 @@ public class Lobby : MonoBehaviour
             GameData.Instance.ID = id;
             LoadSceneManager.Instance.LoadScene("Game");
         });
+
+        
         
         leftBtn.onClick.AddListener(() =>
         {
